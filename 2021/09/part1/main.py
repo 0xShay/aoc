@@ -30,7 +30,7 @@ for rowI, row in enumerate(numbers):
                     if num < min(row[numI-1], numbers[rowI-1][numI]):
                         lilNums.append(num)
         elif (rowI == 0 or rowI == (len(lines)-1)) or (numI == 0 or numI == (len(lines[0])-1)):
-            # edge, three next to
+            # edge, one up, one down, one side
             if rowI == 0:
                 # top, one below, one left, one right
                 if num < min(numbers[rowI+1][numI], row[numI-1], row[numI+1]):

@@ -105,7 +105,7 @@ for n in lilNums:
                 surrounding.append((coords[0]-1, coords[1]))
                 surrounding.append((coords[0], coords[1]-1))
             else:
-                # mid
+                # mid row
                 surrounding.append((coords[0]-1, coords[1]))
                 surrounding.append((coords[0]+1, coords[1]))
                 surrounding.append((coords[0], coords[1]-1))
